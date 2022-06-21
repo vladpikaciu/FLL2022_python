@@ -6,4 +6,6 @@ The program contains:
   - 4 files that contain the program for every run of the robot on the match table.
   - 1 Pikachu Image that is shown on the screen when the program is executed. (for fun)
 
-#### H4 Short summary about the code:
+# Short summary about the code:
+We used the micropython version of the pybricks library to communicate with the operating system of the robot.
+We wanted to experiment with classes in python as a learning experience but it was later deemed as unecesary, that's why we limited ourselves to the built-in pybricks classes. Howewer we used plenty of functions, even decided it would be beneficial to have a separate file called functions.py that was used to invoke functions in other files.
