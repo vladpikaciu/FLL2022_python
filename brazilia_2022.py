@@ -29,12 +29,12 @@ left_motor = Motor(Port.D)
 robot = DriveBase(right_motor, left_motor, wheel_diameter = 62.4, axle_track = 100) #105
 
 counter = 0
-
+# Reset all robot sensors 
 def reset():
     robot.stop()
     robot.reset()
     gyro_sensor.reset_angle(0)
-
+# Make missions start when center button is pressed
 while counter < 5:
     if Button.CENTER in ev3.buttons.pressed():
         sleep(2)
@@ -44,23 +44,25 @@ while counter < 5:
         main_4_state = False
         counter += 1
         print(counter)
+        # Run first mission
         while counter == 1 and main_1_state == False:
             reset()
             print("1")
             main_I()
             main_1_state = True
+        # Run second mission
         while counter == 2 and main_2_state == False:
             print("2")
             reset()
             main_II()
             main_2_state = True
+        # Run third mission
         while counter == 3 and main_3_state == False:
             reset()
             main_III()
             print("3")
             main_3_state = True
-        # # if main_3_state == True:
-        # #     quit()
+        # Run fourth mission
         while counter == 4 and main_4_state == False:
             reset()
             main_IV()
