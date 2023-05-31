@@ -8,4 +8,4 @@ The program contains:
 
 # Short summary about the code:
 We used the micropython version of the pybricks library to communicate with the operating system of the robot.
-We wanted to experiment with classes in python as a learning experience but it was later deemed as unecesary, that's why we limited ourselves to the built-in pybricks classes. Howewer we used plenty of functions, even decided it would be beneficial to have a separate file called functions.py that was used to invoke functions in other files.
+The program contains many new functions, we even decided it would be beneficial to have a separate file called functions.py that was used to invoke functions in other files.
