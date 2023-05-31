@@ -1,5 +1,5 @@
 # FLL2022 Python
-Python programs used by the All for One team from Balti during the 2022 FLL competition.
+Python programs used by the All for One team from Balti during the 2022 FLL championship.
 
 The program contains:
   - 1 Main file called brazilia2022.py that executes all the other script at the press of the center button on the [ev3 robot](https://pybricks.com/ev3-micropython/examples/robot_educator_basic.html).
